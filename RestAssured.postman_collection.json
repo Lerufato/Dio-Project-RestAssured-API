@@ -13,12 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"password123\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}"
 				},
 				"url": {
 					"raw": "https://restful-booker.herokuapp.com/auth",
@@ -41,22 +36,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/booking?firstname=Leticia&lastname=Rufato",
+					"raw": "https://restful-booker.herokuapp.com/booking",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"restful-booker",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"booking"
-					],
-					"query": [
-						{
-							"key": "firstname",
-							"value": "Leticia"
-						},
-						{
-							"key": "lastname",
-							"value": "Rufato"
-						}
 					]
 				}
 			},
@@ -79,12 +67,16 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/booking",
+					"raw": "https://restful-booker.herokuapp.com/booking/1",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"restful-booker",
+						"herokuapp",
+						"com"
 					],
 					"path": [
-						"booking"
+						"booking",
+						"1"
 					]
 				}
 			},
@@ -160,7 +152,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{   \r\n    \"firstname\": \"Leticia\",\r\n    \"lastname\": \"Rufato\",\r\n    \"totalprice\": 777.7,\r\n    \"depositpaid\": false,\r\n    \"bookingdates\": {\r\n        \"checkin\": \"2023-28-01\",\r\n        \"checkout\": \"2023-28-02\"\r\n    },\r\n    \"additionalneeds\": \"bala\"\r\n\r\n}",
+					"raw": "{   \r\n\"firstname\" : \"Jim\",\r\n    \"lastname\" : \"Brown\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -168,9 +160,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/booking",
+					"raw": "https://restful-booker.herokuapp.com/booking",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"restful-booker",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"booking"
@@ -232,9 +227,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/booking",
+					"raw": "https://restful-booker.herokuapp.com/booking",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"restful-booker",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"booking"
@@ -300,7 +298,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{   \r\n    \"firstname\": \"Ayla\",\r\n    \"lastname\": \"Atanasio\",\r\n    \"totalprice\": 777,\r\n    \"depositpaid\": true,\r\n    \"bookingdates\": {\r\n        \"checkin\": \"2023-21-01\",\r\n        \"checkout\": \"2023-21-02\"\r\n    },\r\n    \"additionalneeds\": \"squishmallows\"\r\n\r\n}",
+					"raw": "{   \r\n    \"firstname\": \"Leticia\",\r\n    \"lastname\": \"Rufato\",\r\n    \"totalprice\": 777,\r\n    \"depositpaid\": true,\r\n    \"bookingdates\": {\r\n        \"checkin\": \"2023-28-01\",\r\n        \"checkout\": \"2023-28-02\"\r\n    },\r\n    \"additionalneeds\": \"squishmallows\"\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "xml"
@@ -308,13 +306,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/booking/11797",
+					"raw": "https://restful-booker.herokuapp.com/booking/1",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"restful-booker",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"booking",
-						"11797"
+						"1"
 					]
 				}
 			},
@@ -366,13 +367,16 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/booking/11797",
+					"raw": "https://restful-booker.herokuapp.com/booking/1",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"restful-booker",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"booking",
-						"11797"
+						"1"
 					]
 				}
 			},
